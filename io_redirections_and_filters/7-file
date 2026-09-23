@@ -1,2 +1,13 @@
+wc -l 7-file
+# Salida esperada: 2 7-file
+./7-file
+ls -1t | head -1 | wc -c
+rm -f '*'* 'Best'* '\'*
+git add 7-file
+git commit -m "Fix exact 39-character string for task 7"
+git push
+tail -n 1 iacta >> iacta
+cd ~/utec-shell/io_redirections_and_filters
+cat << 'EOF' > 9-duplicate_last_line
 #!/bin/bash
-echo "Best School" > \\\*\\\'\"Best\ School\"\\\'\\\*\$\?\\*\\*\\*\\*\\*\:\)
+tail -n 1 iacta >> iacta
